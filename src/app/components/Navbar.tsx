@@ -51,28 +51,28 @@ export default function Navbar() {
         >
           <ul className="lg:flex lg:space-x-8 text-xl">
             <li>
-              <Link legacyBehavior href="#about">
+              <Link legacyBehavior href="#About">
                 <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
                   {`<About />`}
                 </a>
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="#experience">
+              <Link legacyBehavior href="#Experience">
                 <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
                   {`<Experience />`}
                 </a>
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="#projects">
+              <Link legacyBehavior href="#Projects">
                 <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
                   {`<Projects />`}
                 </a>
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="#contact">
+              <Link legacyBehavior href="#Contact">
                 <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
                   {`<Contact />`}
                 </a>

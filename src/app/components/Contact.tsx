@@ -13,7 +13,7 @@ export default function Contact() {
             <h1 className="text-5xl font-bold text-center mb-12">Contact Me</h1>
             <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-16">
               {/* Email Button */}
-              <Link href="mailto:your-email@example.com">
+              <Link href="mailto:jdmiller1991@outlook.com">
                 <button className="flex items-center space-x-4 px-8 py-4 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-full shadow-lg hover:from-blue-600 hover:to-blue-800 transition-all duration-300">
                   <FaEnvelope className="text-2xl" />
                   <span className="text-xl font-semibold">
