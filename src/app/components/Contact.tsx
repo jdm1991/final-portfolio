@@ -23,7 +23,7 @@ export default function Contact() {
               </Link>
 
               {/* LinkedIn Button */}
-              <Link href="https://www.linkedin.com/in/your-linkedin-profile">
+              <Link href="www.linkedin.com/in/jack-miller-495798281">
                 <button className="flex items-center space-x-4 px-8 py-4 bg-gradient-to-br from-[#0077B5] to-[#0A66C2] text-white rounded-full shadow-lg hover:from-[#0A66C2] hover:to-[#0077B5] transition-all duration-300">
                   <FaLinkedin className="text-2xl" />
                   <span className="text-xl font-semibold">
