@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -11,10 +12,11 @@ export default function Projects() {
           <div className="bg-white rounded-lg overflow-hidden flex flex-col justify-between">
             <div>
               <div className="relative h-48">
-                <img
+                <Image
                   src="/LandRover.jpg"
                   alt="LandRover"
-                  className="w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
               <div className="p-6 text-center">
@@ -47,10 +49,11 @@ export default function Projects() {
           <div className="bg-white rounded-lg overflow-hidden flex flex-col justify-between">
             <div>
               <div className="relative h-48">
-                <img
+                <Image
                   src="/Express.jpg"
                   alt="ExpressWebDesigns"
-                  className="w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
               <div className="p-6 text-center">
@@ -84,10 +87,11 @@ export default function Projects() {
           <div className="bg-white rounded-lg overflow-hidden flex flex-col justify-between">
             <div>
               <div className="relative h-48">
-                <img
+                <Image
                   src="/project3.jpg"
                   alt="Project 3"
-                  className="w-full h-full object-cover"
+                  layout="fill"
+                  objectFit="cover"
                 />
               </div>
               <div className="p-6 text-center">
@@ -95,11 +99,11 @@ export default function Projects() {
                   BookBank Book Store
                 </h3>
                 <p className="text-gray-600 mb-4">
-                  BookBank was created to showcase a different type of websit,
+                  BookBank was created to showcase a different type of website,
                   notably an interactive e-commerce store that allows people to
                   search books by genre, as well as by name. Constructed using
                   Next.js, Prisma, Node.js and Tailwind, BookBank has been a
-                  complex task,yet immensely satisfying.
+                  complex task, yet immensely satisfying.
                 </p>
               </div>
             </div>
