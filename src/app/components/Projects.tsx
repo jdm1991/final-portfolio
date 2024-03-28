@@ -37,7 +37,7 @@ export default function Projects() {
                   Live Demo
                 </button>
               </Link>
-              <Link href="/github/project1">
+              <Link href="https://github.com/jdm1991/individual-project">
                 <button className="font-normal text-base font-poppins transition-all duration-300 w-32 h-12 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
                   GitHub
                 </button>
@@ -70,12 +70,12 @@ export default function Projects() {
               </div>
             </div>
             <div className="flex justify-center space-x-4 mb-4">
-              <Link href="/project2">
+              <Link href="https://expresswebdesign.netlify.app/">
                 <button className="font-normal text-base font-poppins transition-all duration-300 w-32 h-12 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
                   Live Demo
                 </button>
               </Link>
-              <Link href="/github/project2">
+              <Link href="https://github.com/jdm1991/ExpressWebDesigns">
                 <button className="font-normal text-base font-poppins transition-all duration-300 w-32 h-12 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
                   GitHub
                 </button>
