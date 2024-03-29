@@ -13,10 +13,9 @@ export default function Navbar() {
   return (
     <nav className="bg-white py-6 sticky top-0 z-50 border-b border-gray-200">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
-        <Link legacyBehavior href="/">
+        <Link href="/" legacyBehavior>
           <a className="text-gray-900 font-bold text-3xl">Jack Miller</a>
         </Link>
-
         <div className="lg:hidden">
           <button
             onClick={toggleMenu}
@@ -43,7 +42,6 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
-
         <div
           className={`${
             isOpen ? "block" : "hidden"
@@ -51,30 +49,30 @@ export default function Navbar() {
         >
           <ul className="lg:flex lg:space-x-8 text-xl">
             <li>
-              <Link legacyBehavior href="#About">
+              <Link href="#About" legacyBehavior>
                 <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
-                  {`<About />`}
+                  &lt;About /&gt;
                 </a>
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="#Experience">
+              <Link href="#Experience" legacyBehavior>
                 <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
-                  {`<Experience />`}
+                  &lt;Experience /&gt;
                 </a>
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="#Projects">
+              <Link href="#Projects" legacyBehavior>
                 <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
-                  {`<Projects />`}
+                  &lt;Projects /&gt;
                 </a>
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="#Contact">
+              <Link href="#Contact" legacyBehavior>
                 <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
-                  {`<Contact />`}
+                  &lt;Contact /&gt;
                 </a>
               </Link>
             </li>

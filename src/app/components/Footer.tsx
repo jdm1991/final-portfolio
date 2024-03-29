@@ -11,39 +11,41 @@ export default function Footer() {
           <div className="text-2xl font-bold mb-4 md:mb-0">
             <Link href="/">Jack Miller</Link>
           </div>
+
           {/* Navigation */}
           <nav className="mb-4 md:mb-0">
             <ul className="flex space-x-4">
               <li>
-                <Link legacyBehavior href="#Home">
+                <Link href="#Home" legacyBehavior>
                   <a className="text-gray-600 hover:text-gray-800">
-                    {`<Home />`}
+                    &lt;Home /&gt;
                   </a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="#about">
+                <Link href="#about" legacyBehavior>
                   <a className="text-gray-600 hover:text-gray-800">
-                    {`<About />`}
+                    &lt;About /&gt;
                   </a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="#projects">
+                <Link href="#projects" legacyBehavior>
                   <a className="text-gray-600 hover:text-gray-800">
-                    {`<Projects />`}
+                    &lt;Projects /&gt;
                   </a>
                 </Link>
               </li>
               <li>
-                <Link legacyBehavior href="#contact">
+                <Link href="#contact" legacyBehavior>
                   <a className="text-gray-600 hover:text-gray-800">
-                    {`<Contact />`}
+                    &lt;Contact /&gt;
                   </a>
                 </Link>
               </li>
             </ul>
           </nav>
+
           {/* Social Icons */}
           <div className="flex space-x-4">
             <Link href="https://github.com/your-github-profile">
@@ -54,6 +56,7 @@ export default function Footer() {
             </Link>
           </div>
         </div>
+
         {/* Bottom Text */}
         <div className="mt-8 text-center text-gray-600 text-sm">
           <p>
