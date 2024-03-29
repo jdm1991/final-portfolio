@@ -1,6 +1,3 @@
-import { withExpo } from "@expo/next-adapter";
-import withTM from "next-transpile-modules";
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -20,4 +17,4 @@ const nextConfig = {
   },
 };
 
-export default withExpo(withTM(["aos"])(nextConfig));
+export default nextConfig;
