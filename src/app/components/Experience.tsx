@@ -257,7 +257,7 @@ export default function Experience() {
                     src="https://www.pngfind.com/pngs/m/68-684650_test-frameworks-jasmine-js-logo-png-transparent-png.png"
                     alt="Jasmine"
                     width={48}
-                    height={48}
+                    height={49}
                   />
                 </div>
                 <span className="text-xl font-semibold text-gray-800">
