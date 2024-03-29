@@ -1,5 +1,9 @@
+import { withExpo } from "@expo/next-adapter";
+import withTM from "next-transpile-modules";
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  reactStrictMode: true,
   images: {
     domains: [
       "cdn.pixabay.com",
@@ -16,4 +20,4 @@ const nextConfig = {
   },
 };
 
-export default nextConfig;
+export default withExpo(withTM(["aos"])(nextConfig));
