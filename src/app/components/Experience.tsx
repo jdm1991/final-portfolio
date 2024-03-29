@@ -26,7 +26,7 @@ export default function Experience() {
                   />
                 </div>
                 <span className="text-xl font-semibold text-gray-800">
-                  HTML are we fixed?
+                  HTML
                 </span>
               </div>
 
