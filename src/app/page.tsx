@@ -1,6 +1,7 @@
 "use client";
 
 import { useInView } from "react-intersection-observer";
+
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -17,7 +18,7 @@ export default function Home() {
     initialInView: false,
     threshold: 0.1,
     trackVisibility: true,
-    direction: "up", // Trigger only when scrolling down
+    direction: "down", // Trigger only when scrolling down
   });
 
   const [experienceRef, experienceInView] = useInView({
@@ -27,7 +28,7 @@ export default function Home() {
     initialInView: false,
     threshold: 0.1,
     trackVisibility: true,
-    direction: "up", // Trigger only when scrolling down
+    direction: "down", // Trigger only when scrolling down
   });
 
   const [projectsRef, projectsInView] = useInView({
@@ -37,7 +38,7 @@ export default function Home() {
     initialInView: false,
     threshold: 0.1,
     trackVisibility: true,
-    direction: "up", // Trigger only when scrolling down
+    direction: "down", // Trigger only when scrolling down
   });
 
   const [contactRef, contactInView] = useInView({
@@ -47,7 +48,7 @@ export default function Home() {
     initialInView: false,
     threshold: 0.1,
     trackVisibility: true,
-    direction: "up", // Trigger only when scrolling down
+    direction: "down", // Trigger only when scrolling down
   });
 
   return (
