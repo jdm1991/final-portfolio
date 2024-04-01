@@ -16,7 +16,7 @@ const config: Config = {
       },
       animation: {
         "spin-once": "spin-once 2.0s linear",
-        "fade-up": "fade-up 1s ease-in-out",
+        "fade-up": "fade-up 2s ease-in-out",
       },
       keyframes: {
         "spin-once": {
@@ -24,8 +24,8 @@ const config: Config = {
           "50%": { transform: "rotateY(360deg)" },
         },
         "fade-up": {
-          "0%": { opacity: 0, transform: "translateY(20px)" },
-          "100%": { opacity: 1, transform: "translateY(0)" },
+          "0%": { opacity: "0", transform: "translateY(100px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
         },
       },
     },
