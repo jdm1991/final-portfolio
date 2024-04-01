@@ -1,6 +1,6 @@
-// Home.jsx
+"use client";
 
-'use client'
+import { useInView } from "react-intersection-observer";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
@@ -8,16 +8,27 @@ import Experience from "../components/Experience";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import { useEffect } from 'react'
-
-import AOS from "aos";
-import styles from "aos/dist/aos.module.css";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  const [aboutRef, aboutInView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
 
+  const [experienceRef, experienceInView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
+
+  const [projectsRef, projectsInView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
+
+  const [contactRef, contactInView] = useInView({
+    triggerOnce: true,
+    rootMargin: "-100px 0px",
+  });
 
   return (
     <div>
@@ -26,33 +37,29 @@ export default function Home() {
         <Hero />
         <section
           id="About"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="100"
+          ref={aboutRef}
+          className={`${aboutInView ? "animate-fadeUp" : "opacity-0"}`}
         >
           <About />
         </section>
         <section
           id="Experience"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="100"
+          ref={experienceRef}
+          className={`${experienceInView ? "animate-fadeUp" : "opacity-0"}`}
         >
           <Experience />
         </section>
         <section
           id="Projects"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="100"
+          ref={projectsRef}
+          className={`${projectsInView ? "animate-fadeUp" : "opacity-0"}`}
         >
           <Projects />
         </section>
         <section
           id="Contact"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="100"
+          ref={contactRef}
+          className={`${contactInView ? "animate-fadeUp" : "opacity-0"}`}
         >
           <Contact />
         </section>
