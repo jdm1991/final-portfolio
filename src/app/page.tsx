@@ -12,22 +12,42 @@ import Footer from "../components/Footer";
 export default function Home() {
   const [aboutRef, aboutInView] = useInView({
     rootMargin: "-200px 0px",
-    delay: 200, // Add a delay of 500ms
+    triggerOnce: true,
+    delay: 150,
+    initialInView: false,
+    threshold: 0.1,
+    trackVisibility: true,
+    direction: "up", // Trigger only when scrolling down
   });
 
   const [experienceRef, experienceInView] = useInView({
     rootMargin: "-200px 0px",
-    delay: 200, // Add a delay of 500ms
+    triggerOnce: true,
+    delay: 150,
+    initialInView: false,
+    threshold: 0.1,
+    trackVisibility: true,
+    direction: "up", // Trigger only when scrolling down
   });
 
   const [projectsRef, projectsInView] = useInView({
     rootMargin: "-200px 0px",
-    delay: 200, // Add a delay of 500ms
+    triggerOnce: true,
+    delay: 150,
+    initialInView: false,
+    threshold: 0.1,
+    trackVisibility: true,
+    direction: "up", // Trigger only when scrolling down
   });
 
   const [contactRef, contactInView] = useInView({
     rootMargin: "-200px 0px",
-    delay: 200, // Add a delay of 500ms
+    triggerOnce: true,
+    delay: 150,
+    initialInView: false,
+    threshold: 0.1,
+    trackVisibility: true,
+    direction: "up", // Trigger only when scrolling down
   });
 
   return (
