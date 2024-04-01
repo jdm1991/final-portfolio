@@ -38,28 +38,36 @@ export default function Home() {
         <section
           id="About"
           ref={aboutRef}
-          className={`${aboutInView ? "animate-fadeUp" : "opacity-0"}`}
+          className={`${
+            aboutInView ? "animate-fade-up opacity-100" : "opacity-0"
+          } transition-opacity duration-2000`}
         >
           <About />
         </section>
         <section
           id="Experience"
           ref={experienceRef}
-          className={`${experienceInView ? "animate-fadeUp" : "opacity-0"}`}
+          className={`${
+            experienceInView ? "animate-fade-up opacity-100" : "opacity-0"
+          } transition-opacity duration-2000`}
         >
           <Experience />
         </section>
         <section
           id="Projects"
           ref={projectsRef}
-          className={`${projectsInView ? "animate-fadeUp" : "opacity-0"}`}
+          className={`${
+            projectsInView ? "animate-fade-up opacity-100" : "opacity-0"
+          } transition-opacity duration-2000`}
         >
           <Projects />
         </section>
         <section
           id="Contact"
           ref={contactRef}
-          className={`${contactInView ? "animate-fadeUp" : "opacity-0"}`}
+          className={`${
+            contactInView ? "animate-fade-up opacity-100" : "opacity-0"
+          } transition-opacity duration-2000`}
         >
           <Contact />
         </section>
