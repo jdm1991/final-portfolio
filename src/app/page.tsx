@@ -11,23 +11,23 @@ import Footer from "../components/Footer";
 
 export default function Home() {
   const [aboutRef, aboutInView] = useInView({
-    triggerOnce: true,
-    rootMargin: "-100px 0px",
+    rootMargin: "-200px 0px",
+    delay: 200, // Add a delay of 500ms
   });
 
   const [experienceRef, experienceInView] = useInView({
-    triggerOnce: true,
-    rootMargin: "-100px 0px",
+    rootMargin: "-200px 0px",
+    delay: 200, // Add a delay of 500ms
   });
 
   const [projectsRef, projectsInView] = useInView({
-    triggerOnce: true,
-    rootMargin: "-100px 0px",
+    rootMargin: "-200px 0px",
+    delay: 200, // Add a delay of 500ms
   });
 
   const [contactRef, contactInView] = useInView({
-    triggerOnce: true,
-    rootMargin: "-100px 0px",
+    rootMargin: "-200px 0px",
+    delay: 200, // Add a delay of 500ms
   });
 
   return (
