@@ -46,7 +46,7 @@ export default function Hero() {
                 className="icon transition-transform duration-300 hover:scale-110"
                 onClick={() =>
                   (window.location.href =
-                    "https://www.linkedin.com/in/your-profile")
+                    "https://www.linkedin.com/in/jack-miller-495798281/")
                 }
               />
               <Image
