@@ -3,6 +3,7 @@
 /* eslint-disable react/no-unescaped-entities */
 
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Hero() {
@@ -33,9 +34,11 @@ export default function Hero() {
               <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
                 Download CV
               </button>
-              <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
-                Contact
-              </button>
+              <Link href="#Contact" passHref>
+                <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
+                  Contact
+                </button>
+              </Link>
             </div>
             <div className="flex mt-8 gap-4 justify-center sm:justify-start">
               <Image
