@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo */}
           <Link href="/" legacyBehavior>
-            <div className="flex items-center relative h-12 w-12">
+            <div className="flex items-center relative h-12 w-12 ml-4 md:ml-8">
               <Image
                 src="/logo.png"
                 alt="Logo"
@@ -18,7 +18,7 @@ export default function Footer() {
                 className="object-contain"
                 style={{
                   objectPosition: "center",
-                  transform: "scale(3)", // Adjust the scale value as needed
+                  transform: "scale(3.0)",
                 }}
               />
             </div>
