@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaGithub, FaLinkedin, FaHeart } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,10 +9,20 @@ export default function Footer() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo */}
-          <div className="text-2xl font-bold mb-4 md:mb-0">
-            <Link href="/">Jack Miller</Link>
-          </div>
-
+          <Link href="/" legacyBehavior>
+            <div className="flex items-center relative h-12 w-12">
+              <Image
+                src="/logo.png"
+                alt="Logo"
+                fill={true}
+                className="object-contain"
+                style={{
+                  objectPosition: "center",
+                  transform: "scale(3)", // Adjust the scale value as needed
+                }}
+              />
+            </div>
+          </Link>
           {/* Navigation */}
           <nav className="mb-4 md:mb-0">
             <ul className="flex space-x-4">

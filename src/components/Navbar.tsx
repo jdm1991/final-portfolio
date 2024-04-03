@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image"
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,10 +12,21 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white py-6 sticky top-0 z-50 border-b border-gray-200">
+    <nav className="bg-white py-6 sticky top-0 z-50 border-b border-gray-200 h-16vh">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
         <Link href="/" legacyBehavior>
-          <a className="text-gray-900 font-bold text-3xl">Jack Miller</a>
+          <div className="flex items-center relative h-12 w-12">
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              fill={true}
+              className="object-contain"
+              style={{
+                objectPosition: "center",
+                transform: "scale(3)", // Adjust the scale value as needed
+              }}
+            />
+          </div>
         </Link>
         <div className="lg:hidden">
           <button
