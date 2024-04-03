@@ -12,13 +12,13 @@ export default function Footer() {
           <Link href="/" legacyBehavior>
             <div className="flex items-center relative h-12 w-12 ml-4 md:ml-8">
               <Image
-                src="/logo.png"
+                src="/Logo.png"
                 alt="Logo"
                 fill={true}
-                className="object-contain"
+                className="object-contain sm:scale-90" // Adjust the scale value as needed
                 style={{
                   objectPosition: "center",
-                  transform: "scale(3.0)",
+                  transform: "scale(3.0)", // Keep the original scale on larger screens
                 }}
               />
             </div>

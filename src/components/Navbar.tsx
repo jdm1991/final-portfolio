@@ -14,16 +14,17 @@ export default function Navbar() {
   return (
     <nav className="bg-white py-6 sticky top-0 z-50 border-b border-gray-200 h-16vh">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
+        {/* Logo */}
         <Link href="/" legacyBehavior>
           <div className="flex items-center relative h-12 w-12 ml-4 md:ml-8">
             <Image
               src="/Logo.png"
-              alt="logo"
+              alt="Logo"
               fill={true}
-              className="object-contain"
+              className="object-contain sm:scale-70" // Adjust the scale value as needed
               style={{
                 objectPosition: "center",
-                transform: "scale(3.0)",
+                transform: "scale(3.0)", // Keep the original scale on larger screens
               }}
             />
           </div>
