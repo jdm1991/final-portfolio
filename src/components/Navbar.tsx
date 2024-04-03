@@ -17,8 +17,8 @@ export default function Navbar() {
         <Link href="/" legacyBehavior>
           <div className="flex items-center relative h-12 w-12 ml-4 md:ml-8">
             <Image
-              src="/logo.png"
-              alt="Logo"
+              src="/Logo.png"
+              alt="logo"
               fill={true}
               className="object-contain"
               style={{
