@@ -29,17 +29,17 @@ export default function Footer() {
                 &lt;Home /&gt;
               </a>
             </Link>
-            <Link href="#about" legacyBehavior>
+            <Link href="#About" legacyBehavior>
               <a className="text-gray-600 hover:text-gray-800">
                 &lt;About /&gt;
               </a>
             </Link>
-            <Link href="#projects" legacyBehavior>
+            <Link href="#Projects" legacyBehavior>
               <a className="text-gray-600 hover:text-gray-800">
                 &lt;Projects /&gt;
               </a>
             </Link>
-            <Link href="#contact" legacyBehavior>
+            <Link href="#Contact" legacyBehavior>
               <a className="text-gray-600 hover:text-gray-800">
                 &lt;Contact /&gt;
               </a>
