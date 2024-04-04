@@ -7,8 +7,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "J.D Miller",
   icons: {
-    icon: "/Logo.svg"
-  }
+    icon: {
+      url: "/Logo.svg",
+      type: "image/svg+xml",
+    },
+  },
 };
 
 export default function RootLayout({
