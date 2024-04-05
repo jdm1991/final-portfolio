@@ -31,9 +31,11 @@ export default function Hero() {
               A Full Stack Web Developer
             </h3>
             <div className="flex flex-col sm:flex-row justify-center sm:justify-start gap-4">
-              <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
-                Download CV
-              </button>
+              <Link href="/JackMillerResume.pdf" download>
+                <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
+                  Download CV
+                </button>
+              </Link>
               <Link href="#Contact" passHref>
                 <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
                   Contact

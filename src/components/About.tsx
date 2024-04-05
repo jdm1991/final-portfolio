@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link"
 
 export default function About () {
 
@@ -36,9 +37,11 @@ export default function About () {
                   create efficient, maintainable, and user-friendly solutions
                   that meet the highest industry standards.
                 </p>
-                <button className="font-normal text-base font-poppins transition-all duration-300 w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
-                  Download CV
-                </button>
+                <Link href="/JackMillerResume.pdf" download>
+                  <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
+                    Download CV
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
