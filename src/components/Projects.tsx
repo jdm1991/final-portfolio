@@ -7,7 +7,7 @@ export default function Projects() {
     <div className="bg-white min-h-[70vh] py-20">
       <div className="container mx-auto px-4 md:px-8 rounded-lg border-2 border-blue-500 border-opacity-20 p-6">
         <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
-        <div className="bg-white grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Project 1 */}
           <div className="bg-white rounded-lg overflow-hidden flex flex-col justify-between">
             <div>
@@ -32,12 +32,12 @@ export default function Projects() {
               </div>
             </div>
             <div className="flex justify-center space-x-4 mb-4">
-              <Link href="/project1">
+              <Link href="https://land-rover-phi.vercel.app/contact">
                 <button className="font-normal text-base font-poppins transition-all duration-300 w-32 h-12 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
                   Live Demo
                 </button>
               </Link>
-              <Link href="https://github.com/jdm1991/individual-project">
+              <Link href="https://github.com/jdm1991/land-rover">
                 <button className="font-normal text-base font-poppins transition-all duration-300 w-32 h-12 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
                   GitHub
                 </button>
@@ -76,44 +76,6 @@ export default function Projects() {
                 </button>
               </Link>
               <Link href="https://github.com/jdm1991/ExpressWebDesigns">
-                <button className="font-normal text-base font-poppins transition-all duration-300 w-32 h-12 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
-                  GitHub
-                </button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Project 3 */}
-          <div className="bg-white rounded-lg overflow-hidden flex flex-col justify-between">
-            <div>
-              <div className="relative h-48">
-                <Image
-                  src="/project3.jpg"
-                  alt="Project 3"
-                  layout="fill"
-                  objectFit="cover"
-                />
-              </div>
-              <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">
-                  BookBank Book Store
-                </h3>
-                <p className="text-gray-600 mb-4">
-                  BookBank was created to showcase a different type of website,
-                  notably an interactive e-commerce store that allows people to
-                  search books by genre, as well as by name. Constructed using
-                  Next.js, Prisma, Node.js and Tailwind, BookBank has been a
-                  complex task, yet immensely satisfying.
-                </p>
-              </div>
-            </div>
-            <div className="flex justify-center space-x-4 mb-4">
-              <Link href="/project3">
-                <button className="font-normal text-base font-poppins transition-all duration-300 w-32 h-12 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
-                  Live Demo
-                </button>
-              </Link>
-              <Link href="/github/project3">
                 <button className="font-normal text-base font-poppins transition-all duration-300 w-32 h-12 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-110 hover:text-gray-400 hover:shadow-gray-400/50">
                   GitHub
                 </button>
