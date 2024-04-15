@@ -21,10 +21,10 @@ export default function Navbar() {
               src="/Logo.png"
               alt="Logo"
               fill={true}
-              className="object-contain sm:scale-70" // Adjust the scale value as needed
+              className="object-contain sm:scale-70 transition duration-500 ease-in-out animate-spin-once"
               style={{
                 objectPosition: "center",
-                transform: "scale(3.0)", // Keep the original scale on larger screens
+                transform: "scale(3.0)",
               }}
             />
           </div>

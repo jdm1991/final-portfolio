@@ -1,10 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link"
+import Link from "next/link";
 
-export default function About () {
-
+export default function About() {
   return (
     <div className="bg-white py-20 mt-32">
       <div className="container mx-auto px-4 md:px-8">
@@ -31,17 +30,43 @@ export default function About () {
                   specialize in React, Node.js, and various frontend and backend
                   technologies.
                 </p>
-                <p className="text-lg md:text-xl text-gray-600 mb-6">
-                  With a strong background in computer science and a deep
+                <p className="text-lg md:text-xl text-gray-600 mb-10">
+                  With a strong background in the I.T sector and a good
                   understanding of software engineering principles, I strive to
                   create efficient, maintainable, and user-friendly solutions
                   that meet the highest industry standards.
                 </p>
-                <Link href="/JackMillerResume.pdf" download>
-                  <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
-                    Download CV
-                  </button>
-                </Link>
+                <div className="flex justify-between items-center mb-4">
+                  <div className="flex">
+                    <div className="bg-white border border-black rounded-md p-2 mr-20 flex items-center w-48">
+                      <Image
+                        src="/education.png"
+                        alt="Education Icon"
+                        width={20}
+                        height={20}
+                        className="mr-2"
+                      />
+                      <span className="text-sm text-gray-600">Proficient in both front and back-end development.</span>
+                    </div>
+                    <div className="bg-white border border-black rounded-md p-2 flex items-center w-48">
+                      <Image
+                        src="/availability.png"
+                        alt="Availability Icon"
+                        width={20}
+                        height={20}
+                        className="mr-2"
+                      />
+                      <span className="text-sm text-gray-600">
+                        Available on a full, part-time or contracting basis.
+                      </span>
+                    </div>
+                  </div>
+                  <Link href="/JackMillerResume.pdf" download>
+                    <button className="font-normal text-base font-poppins transition-all duration-300 w-full sm:w-40 h-14 rounded-full text-white bg-gradient-to-br from-black to-[#04619f] hover:bg-opacity-90 hover:scale-105 hover:text-gray-400 hover:shadow-gray-400/50 hover:shadow-silver-500 hover:text-silver-300">
+                      Download CV
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -49,4 +74,4 @@ export default function About () {
       </div>
     </div>
   );
-};
+}
