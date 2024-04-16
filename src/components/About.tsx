@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="bg-white py-20 mt-32">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto px-4 sm:px-6 md:px-8">
         <div className="flex flex-col md:flex-row md:items-stretch justify-between">
           <div className="md:w-1/3 md:order-last mt-8">
             <Image
@@ -36,9 +36,9 @@ export default function About() {
                   create efficient, maintainable, and user-friendly solutions
                   that meet the highest industry standards.
                 </p>
-                <div className="flex justify-between items-center mb-4">
-                  <div className="flex">
-                    <div className="bg-white border border-black rounded-md p-2 mr-20 flex items-center w-48">
+                <div className="hidden xl:flex justify-between items-center mb-4">
+                  <div className="flex xl:flex-row">
+                    <div className="bg-white border border-black rounded-md p-2 mr-20 flex items-center w-48 xl:block hidden">
                       <Image
                         src="/education.png"
                         alt="Education Icon"
@@ -46,9 +46,11 @@ export default function About() {
                         height={20}
                         className="mr-2"
                       />
-                      <span className="text-sm text-gray-600">Proficient in both front and back-end development.</span>
+                      <span className="text-sm text-gray-600">
+                        Proficient in both front and back-end development.
+                      </span>
                     </div>
-                    <div className="bg-white border border-black rounded-md p-2 flex items-center w-48">
+                    <div className="bg-white border border-black rounded-md p-2 flex items-center w-48 xl:block hidden">
                       <Image
                         src="/availability.png"
                         alt="Availability Icon"
