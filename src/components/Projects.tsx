@@ -4,12 +4,14 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <div className="bg-white min-h-[70vh] py-20">
+    <div className="bg-white dark:bg-gray-900 min-h-[70vh] py-20">
       <div className="container mx-auto px-4 md:px-8 rounded-lg border-2 border-blue-500 border-opacity-20 p-6">
-        <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
-        <div className="bg-white grid grid-cols-1 md:grid-cols-2 gap-8">
+        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+          Projects
+        </h2>
+        <div className="bg-white dark:bg-gray-800 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Project 1 */}
-          <div className="bg-white rounded-lg overflow-hidden flex flex-col justify-between">
+          <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex flex-col justify-between">
             <div>
               <div className="relative h-48">
                 <Image
@@ -20,10 +22,10 @@ export default function Projects() {
                 />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                   Land Rover Defender Dealership
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Created as a passion project, this Full Stack development
                   encapsulated the use of Next.js, Node.js, Tailwind & Prisma.
                   The result being a fully interactive and responsive website,
@@ -46,7 +48,7 @@ export default function Projects() {
           </div>
 
           {/* Project 2 */}
-          <div className="bg-white rounded-lg overflow-hidden flex flex-col justify-between">
+          <div className="bg-white dark:bg-gray-800 rounded-lg overflow-hidden flex flex-col justify-between">
             <div>
               <div className="relative h-48">
                 <Image
@@ -57,10 +59,10 @@ export default function Projects() {
                 />
               </div>
               <div className="p-6 text-center">
-                <h3 className="text-xl font-semibold mb-2">
+                <h3 className="text-xl font-semibold mb-2 text-gray-800 dark:text-white">
                   Express Web Designs
                 </h3>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
                   Express Web Designs came into existence as a way to showcase a
                   website that is centred on crafting responsive, sleek and
                   modern websites for its customers. Constructed using React.js,

@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <div className="bg-white py-20">
+    <div className="bg-white dark:bg-gray-900 py-20">
       <div className="container mx-auto px-4 md:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-8 text-center">
           Experience
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-lg border-2 border-blue-500 border-opacity-20 p-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
+          <div className="bg-white dark:bg-gray-800 rounded-lg border-2 border-blue-500 border-opacity-20 p-6">
+            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">
               Front-end Tech Stack
             </h3>
             <div className="grid grid-cols-3 gap-8 justify-items-center">
@@ -151,8 +151,8 @@ export default function Experience() {
             </div>
           </div>
           {/* Back end Tech Stack */}
-          <div className="bg-white rounded-lg border-2 border-blue-500 border-opacity-20 p-6">
-            <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
+          <div className="bg-white dark:bg-gray-800 rounded-lg border-2 border-blue-500 border-opacity-20 p-6">
+            <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-4 text-center">
               Back-end Tech Stack
             </h3>
             <div className="grid grid-cols-3 gap-8 justify-items-center">

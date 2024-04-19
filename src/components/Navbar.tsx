@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import Image from "next/image"
+import Image from "next/image";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white py-6 sticky top-0 z-50 border-b border-gray-200 h-16vh">
+    <nav className="bg-white dark:bg-gray-900 py-6 sticky top-0 z-50 border-b border-gray-200 dark:border-gray-700 h-16vh">
       <div className="container mx-auto flex justify-between items-center px-4 md:px-8">
         {/* Logo */}
         <Link href="/" legacyBehavior>
@@ -29,11 +30,12 @@ export default function Navbar() {
             />
           </div>
         </Link>
+
         <div className="lg:hidden">
           <button
             onClick={toggleMenu}
             type="button"
-            className="text-gray-900 hover:text-gray-700 focus:outline-none"
+            className="text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 focus:outline-none"
           >
             <svg
               className="h-8 w-8 fill-current"
@@ -55,41 +57,47 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
+
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:flex lg:space-x-4 absolute lg:static top-full left-0 right-0 bg-white lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0`}
+          } lg:flex lg:space-x-4 absolute lg:static top-full left-0 right-0 bg-white dark:bg-gray-900 lg:bg-transparent shadow-lg lg:shadow-none p-4 lg:p-0`}
         >
           <ul className="lg:flex lg:space-x-8 text-xl">
             <li>
               <Link href="#About" legacyBehavior>
-                <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
+                <a className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 lg:py-0">
                   &lt;About /&gt;
                 </a>
               </Link>
             </li>
             <li>
               <Link href="#Experience" legacyBehavior>
-                <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
+                <a className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 lg:py-0">
                   &lt;Experience /&gt;
                 </a>
               </Link>
             </li>
             <li>
               <Link href="#Projects" legacyBehavior>
-                <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
+                <a className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 lg:py-0">
                   &lt;Projects /&gt;
                 </a>
               </Link>
             </li>
             <li>
               <Link href="#Contact" legacyBehavior>
-                <a className="block text-gray-700 hover:text-gray-900 py-2 lg:py-0">
+                <a className="block text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 lg:py-0">
                   &lt;Contact /&gt;
                 </a>
               </Link>
             </li>
           </ul>
+        </div>
+
+        {/* Theme toggle */}
+        <div className="lg:ml-4">
+          <ThemeToggle />
         </div>
       </div>
     </nav>
